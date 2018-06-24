@@ -15,3 +15,4 @@
 2. [Ryan: 教你用libuv和http_parser实现webserver(视频)](https://vimeo.com/24713213)
 3. [Quora: libuv与NodeJS](https://www.quora.com/What-is-libuv-in-Node-js)
 4. [啥是NodeJS](https://www.oreilly.com/ideas/what-is-node)
+5. [Ryan对四个问题的回答2011年](https://www.americaninno.com/boston/node-js-interview-4-questions-with-creator-ryan-dahl/)
