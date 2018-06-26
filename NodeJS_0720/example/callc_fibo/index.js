@@ -1,4 +1,5 @@
 // index.js
+// const addon = require('bindings')('callc_fibo')
 const addon = require('./build/Release/addon')
 
 const fibo = x => {
@@ -11,23 +12,16 @@ const fibo = x => {
     }
 }
 
-const fiboC = num => {
-    console.time('fibo: c++')
-    const res = addon.fibo(40)
-    console.timeEnd('fibo: c++')
-    console.log(res)
-}
-
-const fiboJS = num => {
-    console.time('fibo: js')
-    const res = fibo(40)
-    console.timeEnd('fibo: js')
+const timeWrap = (func, name) => {
+    console.time(name)
+    const res = func()
+    console.timeEnd(name)
     console.log(res)
 }
 
 const main = () => {
-    fiboC(40)
-    fiboJS(40)
+    timeWrap(() => addon.fibo(40), 'fiboC')
+    timeWrap(() => fibo(40), 'fiboJS')
 }
 
 main()
