@@ -1,0 +1,47 @@
+<html>
+    <span>123</span>
+<script>
+// // 局部变量, 会被回收
+// ;(() => {
+//     const localHello = {localNumber: 123}
+// })()
+
+// // 全局变量, 不会被回收
+// ;(() => {
+//     globalHello = {globalNumber: 456}
+// })()
+
+// // 没有引用的闭包, 会被回收
+// ;(() => {
+//     const nouseClosureHello = 789
+//     return () => nouseClosureHello
+// })()
+
+// // 有引用的闭包, 不会被回收
+// ;let func = (() => {
+//     const closureHello = 789
+//     return () => closureHello
+// })()
+
+// // 有引用的闭包, 不会被回收, 不是变量不被回收, 而是该变量所在的整个作用域!
+// ;let func = (() => {
+//     let someOtherThing = 1
+//     const closureHello = 789
+//     someOtherThing = null
+//     return () => closureHello
+// })()
+
+// // 引用计数的对象不是单个变量, 而是单个作用域
+// // 当闭包所在的所有引用都被消除了, 则整个作用域会被回收
+// let func = (() => {
+//     let someOtherThing = 1
+//     const closureHello = 789
+//     someOtherThing = null
+//     return () => closureHello
+// })()
+
+// func = null
+
+
+</script>
+</html>
