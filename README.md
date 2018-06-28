@@ -11,6 +11,7 @@
 
 # 参考
 
+0. [官方文档](http://nodejs.cn/api/)
 1. [Stack: 如何开始学习NodeJS原理](https://stackoverflow.com/questions/10680601/nodejs-event-loop)
 2. [Ryan: 教你用libuv和http_parser实现webserver(视频)](https://vimeo.com/24713213)
 3. [Quora: libuv与NodeJS](https://www.quora.com/What-is-libuv-in-Node-js)
