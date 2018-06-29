@@ -14,7 +14,6 @@ const socketCallback = socket => {
     })
 
     // socket.pipe(socket)
-
     // socket.destroy()
 }
 
