@@ -6,16 +6,17 @@ const socketCallback = socket => {
 
     socket.on('end', () => log('socket end'))
 
-    socket.write('message from server\n')
+    // socket.write('message from server\n')
 
     socket.on('data', data => {
-        log(data)
-        socket.write('copied!\n')
+        log(data.toString())
+        // socket.write('copied!\n')
     })
 
     // socket.pipe(socket)
-
     // socket.destroy()
+
+    socket.end()
 }
 
 const serverListeningCallback = () => log('server listening!')
@@ -26,7 +27,7 @@ const server = net.createServer(
 
 server.on('connection', socketCallback)
 
-server.listen(3033
+server.listen(3030
     // , serverListeningCallback
 )
 
