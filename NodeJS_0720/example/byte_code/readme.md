@@ -1,0 +1,1 @@
+node --print-bytecode hello.js
