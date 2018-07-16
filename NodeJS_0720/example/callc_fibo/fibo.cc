@@ -23,9 +23,9 @@ int fibo(const int x) {
 
 void Method(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  int value = args[0]->NumberValue();
+  int value = args[0]->NumberValue(); // v8 -> C++ 的类型转换
   int result = fibo(value);
-  args.GetReturnValue().Set(Number::New(isolate, result));
+  args.GetReturnValue().Set(Number::New(isolate, result)); // C++ -> v8实例内 的类型转换
 }
 
 void init(Local<Object> exports) {
