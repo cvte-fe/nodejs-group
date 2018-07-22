@@ -1,20 +1,20 @@
 const main = () => {
 
     setImmediate(() => {
-        console.log('immediate emit!')
+        console.log('01immediate emit!')
     })
 
 
     setTimeout(function() {
-        console.log('settimeout emit!')
+        console.log('02settimeout emit!')
     }, 0)
 
 
     process.nextTick(function() {
-        console.log('nextTick emit!')
+        console.log('03nextTick emit!')
     })
 
-    console.log('main emit!')
+    console.log('00main emit!')
 }
 
 main()

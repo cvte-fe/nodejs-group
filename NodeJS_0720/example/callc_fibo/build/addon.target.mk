@@ -46,13 +46,13 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/liushaojie/.node-gyp/8.9.0/include/node \
-	-I/Users/liushaojie/.node-gyp/8.9.0/src \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/openssl/config \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/openssl/openssl/include \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/uv/include \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/zlib \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/v8/include
+	-I/Users/liushaojie/.node-gyp/9.8.0/include/node \
+	-I/Users/liushaojie/.node-gyp/9.8.0/src \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/openssl/config \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/openssl/openssl/include \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/uv/include \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/zlib \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
@@ -95,13 +95,13 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/liushaojie/.node-gyp/8.9.0/include/node \
-	-I/Users/liushaojie/.node-gyp/8.9.0/src \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/openssl/config \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/openssl/openssl/include \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/uv/include \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/zlib \
-	-I/Users/liushaojie/.node-gyp/8.9.0/deps/v8/include
+	-I/Users/liushaojie/.node-gyp/9.8.0/include/node \
+	-I/Users/liushaojie/.node-gyp/9.8.0/src \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/openssl/config \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/openssl/openssl/include \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/uv/include \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/zlib \
+	-I/Users/liushaojie/.node-gyp/9.8.0/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/fibo.o
